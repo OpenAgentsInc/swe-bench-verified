@@ -13,6 +13,36 @@ SWE-bench Verified is a human-validated subset of the original SWE-bench dataset
 3. The benchmark aims to provide a more accurate evaluation of AI models' software engineering capabilities.
 4. On SWE-bench Verified, GPT-4o resolves 33.2% of samples, more than doubling its previous score on the original SWE-bench.
 
+## Using the Dataset
+
+We'll be using the 🤗 Datasets library to work with the SWE-bench Verified dataset. Here's how we'll access and use the dataset:
+
+1. Install the required library:
+   ```
+   pip install datasets
+   ```
+
+2. Login to Hugging Face (you'll need to do this once):
+   ```
+   huggingface-cli login
+   ```
+
+3. Load the dataset in your Python script:
+   ```python
+   from datasets import load_dataset
+
+   dataset = load_dataset("princeton-nlp/SWE-bench_Verified")
+
+   # If the dataset has splits, you can load them separately:
+   # train_dataset = load_dataset("princeton-nlp/SWE-bench_Verified", split="train")
+   # valid_dataset = load_dataset("princeton-nlp/SWE-bench_Verified", split="validation")
+   # test_dataset  = load_dataset("princeton-nlp/SWE-bench_Verified", split="test")
+   ```
+
+4. Explore and use the dataset in your model development and testing.
+
+For more detailed information on working with datasets, refer to the [🤗 Datasets documentation](https://huggingface.co/docs/datasets/).
+
 ## Our Approach
 
 To achieve high scores on SWE-bench Verified, we will:
