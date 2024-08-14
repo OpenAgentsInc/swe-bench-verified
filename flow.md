@@ -41,4 +41,21 @@
     - Hidden tests (FAIL_TO_PASS and PASS_TO_PASS) are run
     - Results are recorded and compared against the gold standard solution
 
+11. **Result Documentation**
+    - Create a new folder in the GitHub repository for each sample, named after its instance_id
+    - Generate a markdown document within the folder, containing:
+      - The original problem statement
+      - A summary of the agent's analysis
+      - The final patch submitted by the agent
+      - The evaluation results
+      - Any notable observations or challenges encountered by the agent
+    - Commit and push the new folder and document to the repository
+
+12. **Repository Organization**
+    - Maintain a clear folder structure for easy navigation
+    - Update an index file listing all completed samples and their results
+    - Ensure all sensitive information is removed before pushing to the public repository
+
 Note: The agent does not have access to the test files or the gold standard solution during the process. The evaluation is performed independently after the agent submits its solution.
+
+This workflow allows for transparent tracking of all agent runs, providing valuable insights into the problem-solving process and facilitating easy comparison between different samples and agent performances.
